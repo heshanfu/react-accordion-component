@@ -1,0 +1,23 @@
+{
+  "name": "react-accordion",
+  "version": "1.0.0",
+  "description": "An accordion written in React",
+  "main": "js/accordion.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "accordion",
+    "react",
+    "accordion",
+    "react",
+    "accordion",
+    "component"
+  ],
+  "author": "Saúl Cabrera <saulecabrera@gmail.com> (saulecabrera)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-react": "^3.0.1"
+  }
+}
