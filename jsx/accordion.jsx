@@ -18,9 +18,6 @@ var AccordionElement =  React.createClass({
   },
 
   render: function() {
-    var inline = {
-      display: 'inline'
-    };
 
     return (
       <div className='accordion-element'>
