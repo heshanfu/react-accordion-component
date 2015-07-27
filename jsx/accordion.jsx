@@ -42,10 +42,8 @@ var Accordion = React.createClass({
   },
 
   render: function() {
-    var accordionElements = this.props.elements.map(function(i, e){
-      return (
-        <AccordionElement clickCallback={e.onClick} title={e.title}>
-      );
+    var accordionElements = this.props.elements.map(function(i, e) {
+       return <AccordionElement clickCallback={e.onClick} title={e.title} />
     });
     
     return (
