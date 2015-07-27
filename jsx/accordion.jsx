@@ -51,3 +51,5 @@ var Accordion = React.createClass({
   }
 
 });
+
+module.exports = Accordion;
