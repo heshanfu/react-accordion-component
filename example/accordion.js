@@ -5,7 +5,8 @@ var elements = [{
     title: 'Element 1',
     onClick: function(){
       alert('Hola')
-    }
+    },
+    content: 'Im content'
   }, {
     title: 'Element 2',
     onClick: function(){

@@ -1,14 +1,24 @@
 .accordion-element {
-  width: 100%;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-  padding: 0.5rem
+  margin-top: 0.5rem;
 }
 
-.accordion-element:last-child {
-  border-bottom: none;
+.accordion-element-header {
+  width: 99%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.accordion-element-body {
+  width: 99%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.accordion-element-body div {
+  padding: 0.5rem;
 }
 
 .accordion-wrapper {
@@ -16,14 +26,18 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  border: 1px solid black;
 }
 
-.accordion-element .left-part {
+.accordion-element-header .left-part {
   float: left;
+  margin-left: 0.5rem;
 }
 
-.accordion-element .right-part h4 {
+.accordion-element-header .right-part {
+  margin-left: 2rem;
+}
+
+.accordion-element-header .right-part h4 {
   margin: 0;
 }
 
