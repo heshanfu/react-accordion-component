@@ -3,8 +3,8 @@ var React =  require('React');
 var AccordionElement =  React.createClass({
   
   propTypes: {
-    title: React.propTypes.string,
-    clickCallback: React.propTypes.func
+    title: React.PropTypes.string,
+    clickCallback: React.PropTypes.func
   },
 
   getInitialState: function() {
@@ -21,8 +21,8 @@ var AccordionElement =  React.createClass({
 
     return (
       <div className='accordion-element'>
-        <div className='left-part' style={inline} onClick={this._expand}>{this.state.collapsed ? '●' : '◦'}</div>
-        <div className='right-part' style={inline} onClick={this.props.clickCallback}>
+        <div className='left-part' onClick={this._expand}>{this.state.collapsed ? '●' : '◦'}</div>
+        <div className='right-part' onClick={this.props.clickCallback}>
           <h4>{this.props.title}</h4>
         </div>
       </div>
@@ -35,12 +35,12 @@ var AccordionElement =  React.createClass({
 var Accordion = React.createClass({
 
   propTypes: {
-    elements: React.propTypes.arrayOf(React.propTypes.object)  
+    elements: React.PropTypes.arrayOf(React.PropTypes.object)  
   },
 
   render: function() {
-    var accordionElements = this.props.elements.map(function(i, e) {
-       return <AccordionElement clickCallback={e.onClick} title={e.title} />
+    var accordionElements = this.props.elements.map(function(e, i) {
+       return <AccordionElement key={i} clickCallback={e.onClick} title={e.title} />
     });
     
     return (
