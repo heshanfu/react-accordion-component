@@ -21,7 +21,7 @@ var AccordionElement =  React.createClass({
 
     return (
       <div className='accordion-element'>
-        <div className='left-part' onClick={this._expand}>{this.state.collapsed ? '●' : '◦'}</div>
+        <div className='left-part' onClick={this._expand}>{this.state.collapsed ? '\u25c9' : '\u25ce'}</div>
         <div className='right-part' onClick={this.props.clickCallback}>
           <h4>{this.props.title}</h4>
         </div>

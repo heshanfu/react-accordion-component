@@ -137,7 +137,7 @@ var AccordionElement =  React.createClass({displayName: "AccordionElement",
 
     return (
       React.createElement("div", {className: "accordion-element"}, 
-        React.createElement("div", {className: "left-part", onClick: this._expand}, this.state.collapsed ? '●' : '◦'), 
+        React.createElement("div", {className: "left-part", onClick: this._expand}, this.state.collapsed ? '\u25c9' : '\u25ce'), 
         React.createElement("div", {className: "right-part", onClick: this.props.clickCallback}, 
           React.createElement("h4", null, this.props.title)
         )
