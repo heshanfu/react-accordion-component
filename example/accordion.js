@@ -6,7 +6,7 @@ elements.push(
   { 
     title: 'Element 1', 
     onClick: function(){
-      alert('Hola')
+      alert('Hello World!')
     },
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu hendrerit sem. Vivamus euismod hendrerit purus'
   }

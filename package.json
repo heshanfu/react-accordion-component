@@ -1,10 +1,14 @@
 {
-  "name": "react-accordion",
+  "name": "react-accordion-component",
   "version": "1.0.0",
   "description": "An accordion written in React",
   "main": "js/accordion.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saulecabrera/"
   },
   "keywords": [
     "accordion",
