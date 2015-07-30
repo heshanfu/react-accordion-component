@@ -44,7 +44,7 @@ elements.push({
 ```
 When rendering (using `jsx`):
 ```javascript
-React.render(<Accordion elements={elements} />, document.gtElementById('accordion-example'));
+React.render(<Accordion elements={elements} />, document.getElementById('accordion-example'));
 ```
 
 #Notes
