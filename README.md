@@ -1,3 +1,3 @@
 #React Accordion
 
-![](logo.jpg)
+![](public/logo.jpg)
