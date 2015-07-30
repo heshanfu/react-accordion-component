@@ -24,7 +24,7 @@ To get the basic style of the component, link in your `index.html` the CSS file 
  + `onClick`: callback function triggered when an accordion element is clicked (`function`)
  + `content`: content for an accordion element (`string`)
 
-###Example
+##Example
 ```javascript
 var elements = [];
 elements.push({
@@ -35,23 +35,21 @@ elements.push({
     content: 'Lorem Ipsum...'
   });
   
-  elements.push({
-    title: 'Element 2',
-    onClick: function() {
-    },
-    content: 'Lorem Ipsum...'
-  });
+elements.push({
+  title: 'Element 2',
+  onClick: function() {
+  },
+  content: 'Lorem Ipsum...'
+});
 ```
 When rendering (using `jsx`):
 ```javascript
 React.render(<Accordion elements={elements} />, document.getElementById('accordion-example'));
 ```
-###Voilà
-![](public/accordion_half.jpg) 
+##Voilà
 
 Click in the [fish eye](http://www.fileformat.info/info/unicode/char/25c9/index.htm) to exapand/collapse each accordion element.
-
-![](public/accordion.jpg)
+![](public/accordion_half.jpg) 
 
 #Notes
 In the `index.html` under `examples/` I've used Source Sans Pro font from Google Fonts. Feel free to change the font in `accordion.css` to your preferred font.
