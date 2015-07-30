@@ -4,17 +4,26 @@
 
 .accordion-element-header {
   width: 99%;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  border: 1px solid black;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid #C2CBCE;
   cursor: pointer;
+  color: #333333;
+  background-color: #E8E8E8;
+  border-radius: 3px;
 }
 
-.accordion-element-body {
+.accordion-element-header:hover {
+  background-color: #CCCCCC;
+}
+
+div.accordion-element-body {
+  color: #333333;
   width: 99%;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  border-bottom: 1px solid #C2CBCE;
+  border-right: 1px solid #C2CBCE;
+  border-left: 1px solid #C2CBCE;
+  border-radius: 0 0 3px 3px;
 }
 
 .accordion-element-body div {
@@ -26,6 +35,8 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
 }
 
 .accordion-element-header .left-part {
