@@ -114,13 +114,7 @@ elements.push (
   }
 );
 
-var Example = React.createClass({displayName: "Example",
-  render: function(){
-    return React.createElement(Accordion, {elements: elements})
-  }
-});
-
-React.render(React.createElement(Example, null), document.getElementById('accordion-example'))
+React.render(React.createElement(Accordion, {elements: elements}), document.getElementById('accordion-example'))
 
 },{"../js/accordion":3,"react":158}],3:[function(require,module,exports){
 var React =  require('react');

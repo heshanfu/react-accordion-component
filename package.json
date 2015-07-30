@@ -1,6 +1,6 @@
 {
   "name": "react-accordion-component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minimal UI Accordion component written in React",
   "main": "js/accordion.js",
   "scripts": {

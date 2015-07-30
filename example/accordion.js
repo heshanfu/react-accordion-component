@@ -21,10 +21,4 @@ elements.push (
   }
 );
 
-var Example = React.createClass({displayName: "Example",
-  render: function(){
-    return React.createElement(Accordion, {elements: elements})
-  }
-});
-
-React.render(React.createElement(Example, null), document.getElementById('accordion-example'))
+React.render(React.createElement(Accordion, {elements: elements}), document.getElementById('accordion-example'))
