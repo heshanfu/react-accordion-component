@@ -3,14 +3,21 @@
 ![](public/logo.jpg)
 
 #Installation
-  `$ npm install react-accordion-component`
-
+```sh
+$ npm install react-accordion-component
+```
+  
 #Usage
 To get the basic style of the component, link in your `index.html` the CSS file for the Accordion:
-`<link rel="stylesheet" href=/path/to/accordion.css>` (normally located under your `node_modules` directory)
+```html
+<link rel="stylesheet" href=/path/to/accordion.css>
+```
+(normally located under your `node_modules` directory)
  
  After that just require the component in the desired place of use:
- `var Accordion = require('react-accordion-component');`
+ ```javascript 
+ var Accordion = require('react-accordion-component');
+ ```
  
  The `Accordion` accepts an array of objects, where each of them may have: 
  + `title`: title for an accordion element (`string`)
@@ -18,7 +25,7 @@ To get the basic style of the component, link in your `index.html` the CSS file 
  + `content`: content for an accordion element (`string`)
 
 ##Example
-```
+```javascript
 var elements = [];
 elements.push({
     title: 'Element 1',
@@ -36,7 +43,7 @@ elements.push({
   });
 ```
 When rendering (using `jsx`):
-```
+```javascript
 React.render(<Accordion elements={elements} />, document.gtElementById('accordion-example'));
 ```
 
