@@ -54,5 +54,9 @@ In the `index.html` under `examples/` I've used Source Sans Pro font from Google
 + Add bower support
 + Add `title` property to the accordion(e.g. `<Accordion elements={elements} title={title} />`
 + Add CSS animations
++ Add API to interact with elements
+
+#License
+MIT
 
 
