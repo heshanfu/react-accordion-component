@@ -55,7 +55,6 @@ Click in the [fish eye](http://www.fileformat.info/info/unicode/char/25c9/index.
 In the `index.html` under `examples/` I've used Source Sans Pro font from Google Fonts. Feel free to change the font in `accordion.css` to your preferred font.
 
 #TODO
-+ Add bower support
 + Add `title` property to the accordion(e.g. `<Accordion elements={elements} title={title} />`
 + Add CSS animations
 + Add API to interact with elements
