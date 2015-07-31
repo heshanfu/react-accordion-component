@@ -1,6 +1,6 @@
 {
   "name": "react-accordion-component",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Minimal UI Accordion component written in React",
   "main": "js/accordion.js",
   "scripts": {
@@ -12,8 +12,10 @@
   },
   "keywords": [
     "accordion",
-    "react",
-    "component"
+    "react-component",
+    "react-accordion",
+    "react-accordion-component",
+    "react-accordion-ui"
   ],
   "author": "Saúl Cabrera <saulecabrera@gmail.com> (saulecabrera)",
   "license": "MIT",
