@@ -1,7 +1,7 @@
 var React =  require('react');
 
 var AccordionElement =  React.createClass({
-  
+
   propTypes: {
     title: React.PropTypes.string,
     clickCallback: React.PropTypes.func,
@@ -19,10 +19,10 @@ var AccordionElement =  React.createClass({
   },
 
   render: function() {
-    
+
     var elementBodyStyle = {
-      display: this.state.collapsed ? 'none' : 'block',
-      height: this.state.collapsed ? '0' : '5rem'
+      maxHeight: this.state.collapsed ? '0' : '5rem',
+      borderBottomWidth: this.state.collapsed ? '0' : '1px'
     };
     return (
       <div className='accordion-element'>
@@ -36,7 +36,7 @@ var AccordionElement =  React.createClass({
         </div>
         <div className='accordion-element-body' style={elementBodyStyle}>
           <div>{this.props.content}</div>
-        </div> 
+        </div>
       </div>
     );
   }
@@ -47,14 +47,14 @@ var AccordionElement =  React.createClass({
 var Accordion = React.createClass({
 
   propTypes: {
-    elements: React.PropTypes.arrayOf(React.PropTypes.object)  
+    elements: React.PropTypes.arrayOf(React.PropTypes.object)
   },
 
   render: function() {
     var accordionElements = this.props.elements.map(function(e, i) {
        return <AccordionElement key={i} clickCallback={e.onClick} title={e.title} content={e.content}/>
     });
-    
+
     return (
       <div className='accordion-wrapper'>
         {accordionElements}
