@@ -96,8 +96,8 @@ var Accordion = require('../js/accordion');
 
 var elements = [];
 elements.push(
-  { 
-    title: 'Element 1', 
+  {
+    title: 'Element 1',
     onClick: function(){
       alert('Hello World!')
     },
@@ -120,7 +120,7 @@ React.render(React.createElement(Accordion, {elements: elements}), document.getE
 var React =  require('react');
 
 var AccordionElement =  React.createClass({displayName: "AccordionElement",
-  
+
   propTypes: {
     title: React.PropTypes.string,
     clickCallback: React.PropTypes.func,
@@ -138,22 +138,22 @@ var AccordionElement =  React.createClass({displayName: "AccordionElement",
   },
 
   render: function() {
-    
+
     var elementBodyStyle = {
-      display: this.state.collapsed ? 'none' : 'block',
-      height: this.state.collapsed ? '0' : '5rem'
+      maxHeight: this.state.collapsed ? '0' : '5rem',
+      borderBottomWidth: this.state.collapsed ? '0' : '1px'
     };
     return (
-      React.createElement("div", {className: "accordion-element"}, 
-        React.createElement("div", {className: "accordion-element-header"}, 
-          React.createElement("div", {className: "left-part", onClick: this._expand}, 
+      React.createElement("div", {className: "accordion-element"},
+        React.createElement("div", {className: "accordion-element-header"},
+          React.createElement("div", {className: "left-part", onClick: this._expand},
             this.state.collapsed ? '\u25c9' : '\u25ce'
-          ), 
-          React.createElement("div", {className: "right-part", onClick: this.props.clickCallback}, 
+          ),
+          React.createElement("div", {className: "right-part", onClick: this.props.clickCallback},
             React.createElement("h4", null, this.props.title)
           )
-        ), 
-        React.createElement("div", {className: "accordion-element-body", style: elementBodyStyle}, 
+        ),
+        React.createElement("div", {className: "accordion-element-body", style: elementBodyStyle},
           React.createElement("div", null, this.props.content)
         )
       )
@@ -166,16 +166,16 @@ var AccordionElement =  React.createClass({displayName: "AccordionElement",
 var Accordion = React.createClass({displayName: "Accordion",
 
   propTypes: {
-    elements: React.PropTypes.arrayOf(React.PropTypes.object)  
+    elements: React.PropTypes.arrayOf(React.PropTypes.object)
   },
 
   render: function() {
     var accordionElements = this.props.elements.map(function(e, i) {
        return React.createElement(AccordionElement, {key: i, clickCallback: e.onClick, title: e.title, content: e.content})
     });
-    
+
     return (
-      React.createElement("div", {className: "accordion-wrapper"}, 
+      React.createElement("div", {className: "accordion-wrapper"},
         accordionElements
       )
     );

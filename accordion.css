@@ -1,5 +1,6 @@
 .accordion-element {
   margin-top: 0.5rem;
+  overflow: hidden;
 }
 
 .accordion-element-header {
@@ -24,6 +25,8 @@ div.accordion-element-body {
   border-right: 1px solid #C2CBCE;
   border-left: 1px solid #C2CBCE;
   border-radius: 0 0 3px 3px;
+  -webkit-transition: max-height 0.8s, border-bottom-width 0.8s;
+  transition: max-height 0.8s, border-bottom-width 0.8s;
 }
 
 .accordion-element-body div {
@@ -51,4 +54,3 @@ div.accordion-element-body {
 .accordion-element-header .right-part h4 {
   margin: 0;
 }
-
